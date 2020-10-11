@@ -1,6 +1,6 @@
 # WEBB19–OOAD–Individuell Inlämningsuppgift
 
-## För Godkänd (G)
+### För Godkänd (G)
 
 ## 1. Välj 3 valfria designmönster från boken ”Learning JavaScript Design Patterns” https://addyosmani.com/resources/essentialjsdesignpatterns/book/
 
@@ -45,7 +45,7 @@ phone2.say();
 ```
 
 ## 4. Du behöver dokumentera ditt projekt med dina egna ord och diagram. Modellera några relevanta UML-diagram. Använd Lucidchart.com eller ett annat valfritt modelleringsverktyg.
-
+### Klassdiagram
 | Phone                            |
 | -------------------------------- |
 | -brand: string<br>-color: string |
