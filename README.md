@@ -26,15 +26,15 @@ let newObject = Object.create(Object.prototype);
 let newObject = new Object();
 ```
 
-### Facade Pattern
+### Flyweight Pattern
 
-Facade Pattern är en strukturell designmönster som döljer underliggande komplexitet för att göra det enklare för användaren.
+Flyweight Pattern är en strukturell lösning för att optimera kod som är repetitiv, långsam och som delar data på ett ineffektivt sätt. Det syftar till att minimera användningen av minne i en applikation genom att dela så mycket data som möjligt med relaterade objekt. Detta innebär att man tar flera liknande objekt eller datakonstruktioner som används av ett antal objekt och placerar denna data i ett enda externt objekt. Vi kan sedan skicka igenom det här objektet till de som är beroende av dess data istället för att lagra identiskt data över var och en. Det finns två sätt som detta mönster kan appliceras på. Det första är vid datalagret, där vi hanterar att dela data mellan stora mängder av liknande objekt som är lagrade i minnet. Den andra sättet är i DOM-lagret där mönstret kan användas som en event manager för att undvika att fästa event handlers till varje child element som har ett samma beteende som sin parent element.
 
-### Singleton Pattern
+### Factory Pattern
 
-Singleton Pattern är ett skapande designmönster vars syfte är att begränsa antalet instanser av en klass till ett objekt.
+Factory Pattern är ett skapande designmönster vars syfte är att skapa en instans av en klass och dölja dess logik för användaren. Designmönstret använder fabriksmetoder för att hantera problemet med att skapa objekt när man inte vet den exakta klassen för objektet som ska skapas. Detta genomförs i ett gränssnitt där vi kan specifera vilket objekt vi vill skapa. 
 
-## 3. Skapa ett valfritt utvecklingsprojekt (JavaScript-applikation),där du använder minst ett av dina valda designmönster.
+## 3. Skapa ett valfritt utvecklingsprojekt (JavaScript-applikation), där du använder minst ett av dina valda designmönster.
 
 ```javascript
 // Factory Pattern
@@ -131,9 +131,4 @@ genders.forEach((gender) => gender.say.call(gender));
 
 ## 4. Du behöver dokumentera ditt projekt med dina egna ord och diagram. Modellera några relevanta UML-diagram. Använd Lucidchart.com eller ett annat valfritt modelleringsverktyg.
 
-### Klassdiagram
-
-| Gender                           |
-| -------------------------------- |
-| -name: string<br>-gender: string |
-| -say()                           |
+https://lucid.app/invitations/accept/946e10ff-c9a3-45f6-9c37-9e77a93eda99
